@@ -7,6 +7,8 @@
     "start": "vite --open",
     "dev": "vite",
     "host": "vite --host",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -17,7 +19,13 @@
   "devDependencies": {
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "@vitejs/plugin-react": "^2.2.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-react": "^7.31.11",
     "typescript": "^4.9.3",
     "vite": "^3.2.4"
   }

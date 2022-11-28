@@ -7,6 +7,8 @@
 // random.getDouble(), 0.42061677247796503
 // random.getIntInRange(1,100), 86
 
+/* eslint-disable */
+
 class XorGen {
   seed: string | number | null;
   w: number;
