@@ -36,6 +36,17 @@
         "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
         "arrow-parens": "error",
         "linebreak-style": "off",
-        "max-len": ["error", { "code": 140 }]
+        "max-len": ["error", { "code": 140 }],
+        "no-param-reassign": "off",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+            "multiline": {
+                "delimiter": "comma",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "comma",
+                "requireLast": false
+            }
+        }]
     }
 }
