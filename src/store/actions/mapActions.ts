@@ -1,9 +1,9 @@
 import { createAction } from '@reduxjs/toolkit';
 import { name } from '../slices/mapSlice';
-import { LevelWithFloor } from '../../types/mapTypes';
+import { MapType } from '../../types/mapTypes';
 
 const map = {
-  addLevelToFloor: `${name}/addLevelToFloor`,
+  setMap: `${name}/setMap`,
 };
 
-export const addLevelToFloor = createAction<LevelWithFloor>(map.addLevelToFloor);
+export const setMap = createAction<MapType>(map.setMap);

@@ -7,8 +7,8 @@
     "start": "vite --open",
     "dev": "vite",
     "host": "vite --host",
-    "eslint": "eslint .",
-    "eslint-fix": "eslint . --fix",
+    "eslint": "eslint --ext .tsx,.ts src/",
+    "eslint-fix": "eslint --ext .tsx,.ts src/ --fix",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
     "redux-logger": "^3.0.6"
   },
   "devDependencies": {

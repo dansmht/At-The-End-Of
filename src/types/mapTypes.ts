@@ -1,14 +1,12 @@
-export type Floor = Level[];
+export type MapType = {
+  floors: Floor[],
+};
 
-export type Level = {
-  type: LevelType,
-  position: number,
+export type Floor = Room[];
+
+export type Room = {
+  type: RoomType,
   isHidden: boolean,
 };
 
-export type LevelType = 'Chest' | 'Shop' | 'Camp' | 'Monster' | 'Boss' | 'MegaBoss';
-
-export type LevelWithFloor = {
-  level: Level,
-  floor: number,
-};
+export type RoomType = 'Chest' | 'Shop' | 'Camp' | 'Monster' | 'Boss' | 'MegaBoss';

@@ -1,11 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Floor, LevelWithFloor } from '../../types/mapTypes';
+import { MapType } from '../../types/mapTypes';
 
-type MapSlice = {
-  floors: Floor[],
-};
-
-const initialState: MapSlice = {
+const initialState: MapType = {
   floors: [],
 };
 
@@ -15,12 +11,8 @@ export const mapSlice = createSlice({
   name,
   initialState,
   reducers: {
-    addLevelToFloor(state, action: PayloadAction<LevelWithFloor>) {
-      if (state.floors[action.payload.floor]) {
-        state.floors[action.payload.floor].push(action.payload.level);
-      } else {
-        state.floors[action.payload.floor] = [action.payload.level];
-      }
+    setMap(state, action: PayloadAction<MapType>) {
+      state = action.payload;
     },
   },
 });

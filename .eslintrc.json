@@ -47,6 +47,7 @@
                 "delimiter": "comma",
                 "requireLast": false
             }
-        }]
+        }],
+        "no-plusplus": "off"
     }
 }

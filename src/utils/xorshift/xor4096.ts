@@ -5,7 +5,7 @@
 // random.get() = 0.15204375493340194 // (0, 1) range, 53 bits.
 // random.getInt32(), -1570618080     // signed int32, 32 bits.
 // random.getDouble(), 0.42061677247796503
-// random.getIntInRange(1,100), 86
+// random.getIntInRange(1,100), 86    // 1,2...,99
 
 /* eslint-disable */
 
