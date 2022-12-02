@@ -1,0 +1,42 @@
+@import "fonts.css";
+
+:root {
+  font-family: "Old Soviet", sans-serif;
+
+  --working-width: 1040px;
+  --smallest-font: 12px;
+  --small-font: 14px;
+  --default-font: 16px;
+  --large-font: 18px;
+  --primary-color: #303030;
+  --darker-color: #202020;
+  --darkest-color: #101010;
+  --font-main-color: #fafafa;
+  --font-sub-color: #b0b0b0;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gold-color-rgb: 255,215,0;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--primary-color);
+  /*background: rgb(255,0,0);*/
+  /*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,12,255,1) 35%, rgba(73,255,0,1) 100%);*/
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}

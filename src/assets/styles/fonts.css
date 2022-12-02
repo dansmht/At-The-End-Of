@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Old Soviet';
+    src: url('../fonts/Old-Soviet.woff') format("truetype"),
+    url('../fonts/Old-Soviet.woff2') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
