@@ -4,7 +4,7 @@ import {
 import { MapType, RoomType } from '../../types/mapTypes';
 import { XorShiftGen } from '../../types/numbersGeneratorTypes';
 
-export const generateMap = (random: XorShiftGen) => {
+export const generateMap = (xorShift: XorShiftGen) => {
   const map: MapType = {
     floors: [],
   };
@@ -14,7 +14,7 @@ export const generateMap = (random: XorShiftGen) => {
   }
 
   for (let floor = 0; floor < MAX_FLOORS; floor++) {
-    const roomsInFloor = random.getIntInRange(MIN_ROOMS_IN_FLOOR, MAX_ROOMS_IN_FLOOR + 1);
+    const roomsInFloor = xorShift.getIntInRange(MIN_ROOMS_IN_FLOOR, MAX_ROOMS_IN_FLOOR + 1);
     const floorRoomTypes: RoomType[] = [];
 
     for (let room = 0; room < roomsInFloor; room++) {
@@ -26,13 +26,13 @@ export const generateMap = (random: XorShiftGen) => {
         break;
       }
 
-      const roomTypeIndex = random.getIntInRange(0, ROOM_TYPES_WITH_CERTAIN_CHANCE.length);
+      const roomTypeIndex = xorShift.getIntInRange(0, ROOM_TYPES_WITH_CERTAIN_CHANCE.length);
       const type = ROOM_TYPES_WITH_CERTAIN_CHANCE[roomTypeIndex];
 
       if (floorRoomTypes.includes(type)) break;
       floorRoomTypes.push(type);
 
-      const isHidden = random.getIntInRange(0, 100) < 15;
+      const isHidden = xorShift.getIntInRange(0, 100) < 15;
       map.floors[floor][room] = { type, isHidden };
     }
   }

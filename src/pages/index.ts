@@ -1,4 +1,5 @@
 import { MainMenuPage } from './MainMenuPage';
+import { GamePage } from './GamePage';
 import { StartGamePage } from './StartGamePage';
 import { StatisticsPage } from './StatisticsPage';
 import { AchievementsPage } from './AchievementsPage';
@@ -8,6 +9,7 @@ import { NotFoundPage } from './NotFoundPage';
 
 export {
   MainMenuPage,
+  GamePage,
   StartGamePage,
   StatisticsPage,
   AchievementsPage,

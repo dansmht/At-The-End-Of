@@ -12,7 +12,7 @@ export const mapSlice = createSlice({
   initialState,
   reducers: {
     setMap(state, action: PayloadAction<MapType>) {
-      state = action.payload;
+      state.floors = action.payload.floors;
     },
   },
 });

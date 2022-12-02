@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import {
   AchievementsPage,
+  GamePage,
   MainMenuPage,
   NotFoundPage,
   PatchNotesPage,
@@ -12,6 +13,7 @@ import {
 export const App = () => (
   <Routes>
     <Route path="/" element={<MainMenuPage />} />
+    <Route path="game" element={<GamePage />} />
     <Route path="start-game" element={<StartGamePage />} />
     <Route path="statistics" element={<StatisticsPage />} />
     <Route path="achievements" element={<AchievementsPage />} />
