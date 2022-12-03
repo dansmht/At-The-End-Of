@@ -8,7 +8,7 @@ import {
   SettingsPage,
   StartGamePage,
   StatisticsPage,
-} from '../pages';
+} from '@src/pages';
 
 export const App = () => (
   <Routes>

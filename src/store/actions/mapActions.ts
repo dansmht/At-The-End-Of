@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
+import { MapType } from '@src/types/mapTypes';
 import { name } from '../slices/mapSlice';
-import { MapType } from '../../types/mapTypes';
 
 const map = {
   setMap: `${name}/setMap`,

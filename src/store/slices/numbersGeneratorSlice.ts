@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { XorShift4096 } from '../../utils/xorshift/xor4096';
-import { NumbersGenerator } from '../../types/numbersGeneratorTypes';
+import { XorShift4096 } from '@src/utils/xorshift/xor4096';
+import { NumbersGenerator } from '@src/types/numbersGeneratorTypes';
 
 const initialState: NumbersGenerator = {
   random: null,

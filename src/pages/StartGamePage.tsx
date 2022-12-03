@@ -1,9 +1,9 @@
 import { ChangeEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch } from '../hooks/reduxHooks';
-import { initXorShiftGenerator } from '../global/xorShiftGenerator';
-import { generateMap } from '../utils/map/generateMap';
-import { setMap } from '../store/actions/mapActions';
+import { setMap } from '@store/actions/mapActions';
+import { useAppDispatch } from '@hooks/reduxHooks';
+import { initXorShiftGenerator } from '@src/global/xorShiftGenerator';
+import { generateMap } from '@src/utils/map/generateMap';
 
 export const StartGamePage = () => {
   const dispatch = useAppDispatch();

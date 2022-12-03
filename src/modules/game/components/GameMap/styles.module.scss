@@ -1,0 +1,23 @@
+.GameMap {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+
+  .Floor {
+    width: 300px;
+    background-color: grey;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Svg {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}
