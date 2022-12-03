@@ -1,8 +1,8 @@
 import {
   MAX_FLOORS, MAX_ROOMS_IN_FLOOR, MIN_ROOMS_IN_FLOOR, ROOM_TYPE_CHANCE,
 } from '@constants/map';
-import { GeneralRoomType, MapType } from '@src/types/mapTypes';
-import { XorShiftGen } from '@src/types/numbersGeneratorTypes';
+import { GeneralRoomType, MapType } from '@src/types/map.types';
+import { XorShiftGen } from '@src/types/xorShift.types';
 
 export const generateMap = (xorShift: XorShiftGen) => {
   const map: MapType = {
@@ -47,6 +47,5 @@ export const generateMap = (xorShift: XorShiftGen) => {
     }
   }
 
-  console.log('MAP', map);
   return map;
 };

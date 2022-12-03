@@ -1,4 +1,4 @@
-import { GeneralRoomType } from '@src/types/mapTypes';
+import { GeneralRoomType } from '@src/types/map.types';
 
 export const MAX_FLOORS = 10;
 export const MIN_ROOMS_IN_FLOOR = 1;

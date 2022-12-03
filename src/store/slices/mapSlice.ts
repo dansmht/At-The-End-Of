@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { MapType } from '@src/types/mapTypes';
+import { MapType } from '@src/types/map.types';
 
 const initialState: MapType = {
   floors: [],
