@@ -1,8 +1,9 @@
 .MapPointersLegend {
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 7;
 
   .List {
     border: 4px solid var(--light-color);
