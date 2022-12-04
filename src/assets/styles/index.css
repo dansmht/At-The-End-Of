@@ -13,6 +13,7 @@
   --darkest-color: #101010;
   --font-main-color: #fafafa;
   --font-sub-color: #b0b0b0;
+  --light-color: #c4c4c4;
 
   --white-color: #ffffff;
   --black-color: #000000;
@@ -23,6 +24,7 @@
   /*background: rgb(255,0,0);*/
   /*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,12,255,1) 35%, rgba(73,255,0,1) 100%);*/
   color-scheme: dark;
+  user-select: none;
 }
 
 * {

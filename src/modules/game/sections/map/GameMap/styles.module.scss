@@ -1,0 +1,38 @@
+.GameMap {
+  margin-left: -200px; // TODO
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+
+  .Floor {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Svg {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Room {
+    transition: transform 0.3s ease-in-out,
+                filter 0.3s ease-in-out;
+
+    &.Emphasized {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 5px var(--darkest-color));
+    }
+
+    &.EmphasizedPointer {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 5px var(--darkest-color));
+      cursor: pointer;
+    }
+  }
+}
