@@ -1,0 +1,14 @@
+.Button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.3);
+  }
+}

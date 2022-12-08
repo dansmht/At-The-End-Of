@@ -1,5 +1,7 @@
 .Page {
+  position: relative;
   height: 100%;
+  overflow: hidden;
 
   &.MainMenuPage {
     display: flex;
@@ -75,5 +77,60 @@
       align-items: flex-end;
       justify-content: flex-end;
     }
+  }
+
+  &.StartGamePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .CharacterList {
+      margin: 20px 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .BackButton,
+    .PlayButton {
+      position: absolute;
+      bottom: 80px;
+      width: 200px;
+      height: 60px;
+      border: 2px solid rgba(var(--gold-color-rgb), 0.3);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .BackButton {
+      left: 0;
+      border-left: none;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .PlayButton {
+      right: 0;
+      border-right: none;
+      transition: right 0.3s ease-in-out;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+
+      &.Hidden {
+        right: -200px;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    border-color: var(--gold-color);
+  }
+  50% {
+    border-color: #ffe866;
+  }
+  100% {
+    border-color: var(--gold-color);
   }
 }

@@ -1,7 +1,7 @@
 import { FC, useCallback, useState } from 'react';
 import classNames from 'classnames';
 import MapPointers from '@images/SVG/MapPointers';
-import { mapSelector } from '@store/selectors/mapSelectors';
+import { mapSelector } from '@store/selectors/map.selectors';
 import { useAppSelector } from '@hooks/reduxHooks';
 import { MapPointersLegend } from '@modules/game/sections/map';
 import { Nullable } from '@src/types/general.types';

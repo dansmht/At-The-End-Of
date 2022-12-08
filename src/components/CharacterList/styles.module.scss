@@ -1,0 +1,34 @@
+.CharacterList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .Item {
+    width: 100px;
+    height: 100px;
+    background: var(--light-color);
+    color: var(--darkest-color);
+    border-radius: 8px;
+
+    > button {
+      border-radius: inherit;
+    }
+
+    &.Selected {
+      animation: glow 3s linear infinite;
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 7px var(--gold-color));
+  }
+  50% {
+    filter: drop-shadow(0 0 3px var(--gold-color));
+  }
+  100% {
+    filter: drop-shadow(0 0 7px var(--gold-color));
+  }
+}

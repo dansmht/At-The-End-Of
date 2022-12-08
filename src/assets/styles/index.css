@@ -17,6 +17,7 @@
 
   --white-color: #ffffff;
   --black-color: #000000;
+  --gold-color: #ffd700;
   --gold-color-rgb: 255,215,0;
 
   color: rgba(255, 255, 255, 0.87);
@@ -41,4 +42,8 @@ body,
 
 li {
   list-style: none;
+}
+
+button {
+  font-family: inherit;
 }

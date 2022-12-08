@@ -50,6 +50,7 @@
         }],
         "no-plusplus": "off",
         "react/jsx-props-no-spreading": "off",
-        "react/no-array-index-key": "off"
+        "react/no-array-index-key": "off",
+        "react/button-has-type": "off"
     }
 }

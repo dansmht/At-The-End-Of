@@ -1,6 +1,6 @@
 import {
   MAX_FLOORS, MAX_ROOMS_IN_FLOOR, MIN_ROOMS_IN_FLOOR, ROOM_TYPE_CHANCE,
-} from '@constants/map';
+} from '@constants/map.const';
 import { GeneralRoomType, MapType } from '@src/types/map.types';
 import { XorShiftGen } from '@src/types/xorShift.types';
 
